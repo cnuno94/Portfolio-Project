@@ -1,8 +1,5 @@
-body {
-  background-color: red; }
-
 .navbar {
-  background-color: darkblue; }
+  background-color: rgb(0, 0, 139); }
 
 .containerfull {
   width: 100%; }
@@ -12,16 +9,64 @@ body {
 
 .col {
   padding: 0; }
-
+ul li a {
+    font-size: 1.5rem;
+}
+.nav-link {
+    color: white;
+}
+/*welcome pieces*/
 .welcomecard {
   padding-top: 25px;
   padding-bottom: 15px; }
-
+.welcomecard p{
+    font-family: 'Mukta', sans-serif;
+    font-size: 1.5rem;
+}
 .welcomecard h1 {
-  color: black; }
+  color: black;
+  font-family: 'Noto Serif', serif;
+  font-size: 3rem;
+}
 
+.welcomecard .col{
+    text-align: center;
+}
+.welcomecard .colpad {
+    padding: 0;
+}
+@media only screen and (max-width: 992px) {
+    .welcomecard .col {
+        text-align: start;
+    }
+  }
+
+/*form*/
+.containerform {
+    padding-bottom: 20px;
+}
 .containerform .card-title {
-  text-align: center; }
-
+  text-align: center;
+  font-family: 'Mukta', sans-serif;
+  font-size: 1.5rem; 
+}
+.card {
+    border: 5px solid black;
+}
+/*footer css*/  
 footer {
-  background-color: darkblue; }
+  background-color: rgb(0, 0, 139); }
+footer ul {
+    list-style-type: none;
+    padding: 0px;
+}
+footer ul li {
+    padding: 10px;
+    border-bottom: 1px solid white;
+}
+footer h4 {
+    text-align: center;
+    color: white;
+    font-family: 'Mukta', sans-serif;
+    font-size: 1.5rem;
+}
