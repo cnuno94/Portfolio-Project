@@ -11,10 +11,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;800&family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>Machine Shop</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-md sticky-top">
+    <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="img/rsz_11logo.png" alt=""></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,9 +37,9 @@
         </div>
     </nav>
     <div class="container equipmentservices">
-      <div class="row rowequipment justify-content-center">
+      <div class="row" id="rowequipment">
         <div class="col-12 col-md-4">
-          <h4>Equipment Capabilities</h4>
+          <h4>Equipment Capabilities:</h4>
           <ul>
             <li>Lathes (CNC and Manual)</li>
             <li>Vertical/Horizontal Mills (CNC and Manual)</li>
@@ -49,9 +50,9 @@
           <img src="img/lathe.png" class="img-thumbnail" alt="">
         </div>
       </div>
-      <div class="row">
+      <div class="row" id="rowinspection">
         <div class="col-12 col-md-4">
-          <h4>Inspection Capabilities</h4>
+          <h4>Inspection Capabilities:</h4>
           <ul>
             <li>Coordinate Measuring Machine (CMM)</li>
           </ul>
@@ -60,9 +61,9 @@
           <img src="img/cmm.jpg" class="img-thumbnail" alt="">
         </div>
       </div>
-      <div class="row rowengineeringservices">
+      <div class="row" id="rowengineeringservices">
         <div class="col-12 col-md-4">
-          <h4>Engineering Services</h4>
+          <h4>Engineering Services:</h4>
           <ul>
             <li>Drawing Drafting</li>
             <li>CAD (Computer Aided Design) Modeling</li>
@@ -76,8 +77,8 @@
           <img src="img/wrench FEA.png" class="img-thumbnail" alt="">
         </div>
       </div>
-      <div class="row rowmaterials">
-        <div class="col-6">
+      <div class="row" id="rowmaterials">
+        <div class="col-12 col-md-4">
           <h4>Materials we work:</h4>
           <ul>
             <li>Aluminum</li>
@@ -86,6 +87,10 @@
             <li>Bronze</li>
             <li>Plastics</li>
           </ul>
+        </div>
+        <div class="col-12 col-md-8 colimages">
+          <img src="img/bronze on lathe.jpg" class="img-thumbnail" alt="">
+          <img src="img/stainless steel machining.jpg" class="img-thumbnail" alt="">
         </div>
       </div>
     </div>
@@ -108,8 +113,19 @@
         </div>
       </div>
     </footer>
-<script src="js/eventlisteners.js"></script>
-<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+    
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+ 
+    <script>
+      $(document).ready(function(){
+        $("#rowequipment").fadeIn(1000);
+        $("#rowinspection").fadeIn(3000);
+        $("#rowengineeringservices").fadeIn(5000);
+        $("#rowmaterials").fadeIn(5000);
+      });
+      </script>
 </body>
 </html>
